@@ -1,0 +1,24 @@
+/* pages/home/w-categroy/w-categroy.wxss */
+.category{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 20rpx solid #eee;
+  padding-bottom: 20rpx;
+}
+.category-item{
+  flex: 20%;
+  margin-top: 30rpx;
+  text-align: center;
+ 
+}
+.category-item > image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.category-item > .title{
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #555
+}

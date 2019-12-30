@@ -1,0 +1,16 @@
+<!--pages/home/w-swiper/w-swiper.wxml-->
+  <swiper 
+  class="swiper"
+  autoplay
+  circular
+  indicator-dots
+  indicator-active-color="#835F41"
+  >
+  <block wx:for="{{slides}}" wx:key="index">
+    <swiper-item class="swiper-item" >
+      <image src="{{item.image}}" mode="scaleToFill"/>
+    </swiper-item>
+  </block>
+  </swiper>
+
+  

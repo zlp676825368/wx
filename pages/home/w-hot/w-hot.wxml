@@ -1,0 +1,15 @@
+<!--pages/home/w-hot/w-hot.wxml-->
+<view class="recommend">
+  <block wx:for="{{recommend}}" wx:key="index">
+      <view class="recommend-item" data-id="{{item.goodsId}}" bind:tap="hotHandleClick">
+        <image src="{{item.image}}" mode="aspectFill"/>
+        <view class="title">
+          {{item.name}}
+        </view>
+        <view class="price">
+          <text class="old">￥{{item.presentPrice}} </text>
+          <text class="new">￥{{item.oriPrice}}</text>
+        </view>
+      </view>
+  </block>
+</view>

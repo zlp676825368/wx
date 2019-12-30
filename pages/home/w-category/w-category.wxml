@@ -1,0 +1,11 @@
+<!--pages/home/w-categroy/w-categroy.wxml-->
+<view class="category">
+  <block wx:for="{{category}}" wx:key="index">
+    <view class="category-item" data-id="{{item.firstCategoryId}}" bind:tap="handleCateItem">
+      <image src="{{item.image}}" />
+      <view class="title">
+        <text>{{item.firstCategoryName}}</text>
+      </view>
+    </view>
+  </block>
+</view>

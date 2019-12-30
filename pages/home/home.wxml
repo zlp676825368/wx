@@ -1,0 +1,31 @@
+<!--pages/home/home.wxml-->
+<!--轮播图-->
+<w-swiper slides="{{slides}}" />
+
+<!--分类-->
+<w-category category="{{category}}" bind:itemClick="itemClick"></w-category>
+
+<!--商品推荐-->
+<view class="title">商品推荐</view>
+<w-recommend recommend="{{recommend}}" bind:recommendItemClick="recommendItemClick"></w-recommend>
+<!--广告-->
+<view class="floor1Pic">
+  <image src="{{floor1Pic.PICTURE_ADDRESS}}"/>
+</view>
+<!--底部推荐商品-->
+<view class="floor1">
+  <block>
+    <view class="left">
+      <image src="{{floor1[0].image}}"/>
+      <image src="{{floor1[1].image}}"/>
+    </view>
+    <view class="right">
+      <image src="{{floor1[2].image}}"/>
+      <image src="{{floor1[3].image}}"/>
+      <image src="{{floor1[4].image}}"/>
+    </view>
+  </block>
+</view>
+<!--火爆专区-->
+<view class="recommend-title">火爆专区</view>
+<w-hot recommend="{{recommend}}" bind:hotHandleClick="hotHandleClick"></w-hot> 

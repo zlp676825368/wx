@@ -1,0 +1,30 @@
+/* pages/home/w-recommend/w-recommend.wxss */
+.recommend{
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  
+}
+.recommend-item{
+  flex: 30%;
+  padding: 20rpx;
+  border: 1rpx solid #eee;
+  border-right: none;
+  border-bottom: none;
+}
+.recommend-item >image{
+  width: 250rpx;
+  height: 250rpx;
+  border-radius: 8rpx;
+}
+.recommend-item >.new-price{
+  text-align: center;
+  color: red;
+  padding-top: 10rpx;
+}
+.recommend-item >.old-price{
+  text-align: center;
+  text-decoration: line-through;
+  color: grey;
+  padding-top: 10rpx;
+}

@@ -1,0 +1,38 @@
+/* pages/home/w-hot/w-hot.wxss */
+.recommend{
+  display: flex;
+  flex-wrap: wrap;
+}
+.recommend>.recommend-item{
+  flex: 1;
+  text-align: center;
+  border: 1rpx solid #eee;
+  border-right: none;
+  border-bottom: none;
+  padding: 10rpx;
+}
+.recommend-item>image{
+  width: 350rpx;
+  height: 500rpx;
+  display: inline-block;
+  border-radius: 6rpx;
+}
+.recommend-item>.title{
+  width: 350rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #835F41;
+  font-size: 26rpx;
+  padding: 20rpx 0;
+}
+.price{
+  font-size: 32rpx;
+}
+.old{
+  color: red;
+}
+.new{
+  text-decoration: line-through;
+  color: #555;
+}

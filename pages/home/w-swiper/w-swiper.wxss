@@ -1,0 +1,8 @@
+/* pages/home/w-swiper/w-swiper.wxss */
+.swiper{
+height: 300rpx;
+}
+.swiper-item >image{
+  width: 100%;
+  height: 300rpx;
+}

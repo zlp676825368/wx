@@ -1,0 +1,14 @@
+<!--pages/home/w-recommend/w-recommend.wxml-->
+<view class="recommend">
+  <block wx:for="{{recommend}}" wx:key="index">
+    <view class="recommend-item" data-id="{{item.goodsId}}" bind:tap="handleItemClick">
+      <image src="{{item.image}}" />
+      <view class="new-price">
+        <text>￥{{item.presentPrice}}</text>
+      </view>
+      <view class="old-price">
+        <text>￥{{item.oriPrice}}</text>
+      </view>
+    </view>
+  </block>
+</view>
