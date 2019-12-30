@@ -1,16 +1,43 @@
 <!--pages/categroy/categroy.wxml-->
 
 <view class="content">
-<!--左边导航-->
+  <!--左边导航-->
   <view class="navi">
     <block wx:for="{{categroys}}" wx:key="index">
-      <view class="{{item.checked?'active':'item'}}" data-id="{{item.firstCategoryId}}" bind:tap="cateHandleClick">
+      <view class="{{categroyIndex==index?'active':'item'}}" data-id="{{item.firstCategoryId}}" data-index="{{index}}" bind:tap="cateHandleClick">
         <text>{{item.firstCategoryName}}</text>
       </view>
     </block>
   </view>
   <!--右边商品数据-->
   <view class="goods">
-    
+    <!--子分类-->
+    <view class="child-cate">
+      <block wx:for="{{childCategroys}}" wx:key="index">
+        <text class="{{childCateIndex==index?'text-active':''}}" 
+        bind:tap="childCateHandle" 
+        data-index="{{index}}"
+        data-childId="{{item.secondCategoryId}}">
+          {{item.secondCategoryName}}
+        </text>
+      </block>
+    </view>
+    <!--商品列表-->
+    <view class="goods-content">
+      <block wx:for="{{goods}}" wx:key="index">
+        <view class="goods-item">
+          <image class="image" src="{{item.image}}" />
+          <view class="desc">
+            <view class="title">
+              <text>{{item.name}}</text>
+            </view>
+            <view class="price">
+              <text>￥{{item.presentPrice}}</text>
+              <text>￥{{item.oriPrice}}</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
   </view>
 </view>

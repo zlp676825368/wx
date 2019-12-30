@@ -1,17 +1,20 @@
 /* pages/categroy/categroy.wxss */
-.content{
+
+.content {
   position: fixed;
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.content>.navi{
+
+.content>.navi {
   flex: 1;
   border-right: 1rpx solid #eee;
   overflow-y: scroll;
 }
-.content>.navi>.item{
+
+.content>.navi>.item {
   height: 100rpx;
   text-align: center;
   line-height: 100rpx;
@@ -19,16 +22,97 @@
   font-size: 30rpx;
   color: #555;
 }
-.content>.goods{
-  flex: 3;
-  overflow-y: scroll;
-}
-.active{
+
+.active {
   height: 100rpx;
   text-align: center;
   line-height: 100rpx;
   font-size: 30rpx;
   border-bottom: 1rpx solid #eee;
   background-color: #eee;
-  color: #835F41
+  color: #835f41;
+}
+
+.content>.goods {
+  flex: 3;
+  overflow-y: scroll;
+}
+
+.goods>.child-cate {
+  height: 90rpx;
+  border-bottom: 1rpx solid #eee;
+  color: black;
+  font-size: 30rpx;
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  display: flex;
+}
+
+.child-cate>text {
+  display: inline-block;
+  padding: 0 20rpx;
+  line-height: 30rpx;
+}
+
+.text-active {
+  color: #835f41;
+}
+
+.goods>.goods-content {
+  margin-top: 90rpx;
+}
+
+.goods-item {
+  display: flex;
+  flex-wrap: wrap;
+  height: 220rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.goods-item>.image {
+  height: 200rpx;
+  width: 220rpx;
+  padding: 10rpx;
+  display: inline-block;
+}
+
+.goods-item>.desc {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.desc>.title {
+  flex: 1;
+  font-size: 28rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 60rpx;
+  line-height: 50rpx;
+  padding-top: 20rpx;
+}
+
+.desc>.price {
+  flex: 1;
+  font-size: 28rpx;
+}
+.price>text{
+  display: inline-block;
+  margin-top: 40rpx;
+  padding: 0 10rpx;
+}
+.price>text:nth-child(1){
+  color: red;
+}
+.price>text:nth-child(2){
+  color: #555;
+  text-decoration:line-through;
+  
 }
