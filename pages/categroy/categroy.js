@@ -1,18 +1,44 @@
 // pages/categroy/categroy.js
+import { getCategory } from "../../service/categroy.js";
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    categroys:[],
+    checked:false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    getCategory().then((res)=>{
+      this.setData({
+        categroys: res.data.data
+      });
+      console.log(this.data.categroys);
+    }).catch((err)=>{
+      console.log(err);
+    });
+  },
 
+  //分类点击事件
+  cateHandleClick(event){
+    const id = event.currentTarget.dataset.id;
+    const array = this.data.categroys;
+    array.forEach((item) => {
+        item.checked = false;
+    });
+    array.forEach((item)=>{
+      if (item.firstCategoryId===id){
+        item.checked=true;
+      }
+    });
+    this.setData({
+      categroys: array
+    });
   },
 
   /**

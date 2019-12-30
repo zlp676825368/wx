@@ -1,2 +1,16 @@
 <!--pages/categroy/categroy.wxml-->
-<text>pages/categroy/categroy.wxml</text>
+
+<view class="content">
+<!--左边导航-->
+  <view class="navi">
+    <block wx:for="{{categroys}}" wx:key="index">
+      <view class="{{item.checked?'active':'item'}}" data-id="{{item.firstCategoryId}}" bind:tap="cateHandleClick">
+        <text>{{item.firstCategoryName}}</text>
+      </view>
+    </block>
+  </view>
+  <!--右边商品数据-->
+  <view class="goods">
+    
+  </view>
+</view>
