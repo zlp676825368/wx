@@ -1,0 +1,35 @@
+/* pages/profile/w-entry/w-entry.wxss */
+.item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: relative;
+}
+.item>text{
+  display: inline-block;
+  font-size: 32rpx;
+  position: absolute;
+  left: 20%;
+}
+
+/* 向右的箭头 */
+.arrow-right {
+  height: 14rpx;
+  width: 14rpx;
+  border-right: 4rpx solid #835f41;
+  border-bottom: 4rpx solid #835f41;
+  transform: rotate(-45deg);
+  margin: 43rpx;
+  position: absolute;
+  right: 0
+}
+.icon {
+  position: absolute;
+  left: 0;
+  width: 50rpx;
+  height: 50rpx;
+  margin: 25rpx;
+  background-size: cover;
+}

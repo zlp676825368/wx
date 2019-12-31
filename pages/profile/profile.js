@@ -12,8 +12,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
+  paymentHandle(){
+    console.log("待付款");
+  },
+  deliveryHandle(){
+    console.log("待发货");
+  },
+  goodsHandle(){
+    console.log("待收货");
+  },
+  evaluationHandle(){
+    console.log("待评价");
+  },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

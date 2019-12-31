@@ -75,6 +75,8 @@
   width: 220rpx;
   padding: 10rpx;
   display: inline-block;
+  border-radius: 8rpx;
+  overflow: hidden
 }
 
 .goods-item>.desc {

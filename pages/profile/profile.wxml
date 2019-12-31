@@ -1,2 +1,21 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class="content">
+  <view class="head">
+    <open-data class="img" type="userAvatarUrl"></open-data>
+    <open-data class="userNickName" type="userNickName" lang="zh_CN"></open-data>
+  </view>
+  <view class="center">
+    <w-entry title="我的订单" iconsvg="order" bottomstyle="myorder"/>
+    <!--待付款，待发货，待收货，评价-->
+    <w-actions
+      bind:paymentHandle="paymentHandle"
+      bind:deliveryHandle="deliveryHandle"
+      bind:goodsHandle="goodsHandle"
+      bind:evaluationHandle="evaluationHandle"
+    />
+    <w-entry title="领取优惠券" iconsvg="coupons" bottomstyle="myaddress"/>
+    <w-entry title="地址管理" iconsvg="address" bottomstyle="myaddress"/>
+    <w-entry title="客服服务" iconsvg="custservice" bottomstyle="myaddress"/>
+  </view>
+  
+  
+</view>

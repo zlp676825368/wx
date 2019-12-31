@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "w-cart-item":"../w-cart-item/w-cart-item"
+  },
+  "navigationBarTitleText": "购物车"
 }

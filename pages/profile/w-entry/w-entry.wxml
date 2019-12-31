@@ -1,0 +1,6 @@
+<!--pages/profile/w-entry/w-entry.wxml-->
+<view class="item bottomstyle">
+  <view class="icon iconsvg"></view>
+  <text>{{title}}</text>
+  <view class="arrow-right"></view>
+</view>

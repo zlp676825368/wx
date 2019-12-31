@@ -1,0 +1,17 @@
+<!--pages/cart/w-cart-item/w-cart-item.wxml-->
+<view class="cart-item">
+  <checkbox checked="{{item.checked}}" color="#835F41" bind:tap="checkboxHandle" data-id="{{item.goodsId}}" />
+  <image src="{{item.image}}"/>
+  <view class="title">
+    <text class="good-name">{{item.name}}</text>
+    <view class="cart">
+      <text bind:tap="subHandle" data-id="{{item.goodsId}}">-</text>
+      <text>{{item.count}}</text>
+      <text bind:tap="addHandle" data-id="{{item.goodsId}}">+</text>
+    </view>
+  </view>
+  <view class="price">
+    <text>￥{{item.presentPrice}}</text>
+    <view class="icon" bind:tap="delHandle" data-id="{{item.goodsId}}"></view>
+  </view>
+</view>

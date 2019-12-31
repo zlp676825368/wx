@@ -1,0 +1,19 @@
+<!--pages/profile/w-actions/w-actions.wxml-->
+<view class="actions">
+  <view class="item" bind:tap="paymentHandle">
+    <view class="icon payment"></view>
+    <text>待付款</text>
+  </view>
+  <view class="item" bind:tap="deliveryHandle">
+    <view class="icon delivery"></view>
+    <text>待发货</text>
+  </view>
+  <view class="item" bind:tap="goodsHandle">
+    <view class="icon goods"></view>
+    <text>待收货</text>
+  </view>
+  <view class="item" bind:tap="evaluationHandle">
+    <view class="icon evaluation"></view>
+    <text>待评价</text>
+  </view>
+</view>

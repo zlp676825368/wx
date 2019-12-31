@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "w-actions":"../w-actions/w-actions",
+    "w-entry": "../w-entry/w-entry"
+  },
+  "navigationBarTitleText": "会员中心"
 }
